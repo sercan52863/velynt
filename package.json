@@ -1,15 +1,11 @@
 {
-  "name": "velynt-system",
+  "name": "velynt",
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./"
   },
-  "dependencies": {
-    "@tensorflow/tfjs": "^4.0.0",
-    "face-api.js": "^0.22.2",
-    "animejs": "^3.2.1",
-    "genetic-js": "^0.1.14",
+  "devDependencies": {
     "parcel": "^2.8.3"
   }
 }
