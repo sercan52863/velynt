@@ -1,24 +1,22 @@
-// Değişkenler
-$primary: #2A2A2A;
-$secondary: #D4AF37;
-
-// Responsive Mixin
-@mixin respond-to($breakpoint) {
-  @media (min-width: $breakpoint) {
-    @content;
-  }
-}
-
-// Global Stiller
 body {
+  margin: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, $primary, lighten($primary, 10%));
+  background: #f5f5f5;
 }
 
-// Mobil İlk Yaklaşım
-@include respond-to(768px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://example.com/hero-bg.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.reservation-form {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
