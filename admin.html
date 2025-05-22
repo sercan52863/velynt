@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velynt - Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">Velynt</div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Reservations</a></li>
+                    <li class="active"><a href="#"><i class="fas fa-car"></i> Vehicles</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Drivers</a></li>
+                    <li><a href="#"><i class="fas fa-dollar-sign"></i> Pricing</a></li>
+                    <li><a href="#"><i class="fas fa-file-alt"></i> Content</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
+                    <li><a href="#"><i class="fas fa-image"></i> Eeogage</a></li> <li><a href="#"><i class="fas fa-video"></i> Video</a></li>
+                    <li><a href="#"><i class="fas fa-paint-brush"></i> Theme</a></li>
+                    <li><a href="#"><i class="fas fa-sticky-note"></i> Note</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="admin-main-content">
+            <header class="admin-header">
+                <h2>Admin</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </header>
+
+            <section class="vehicles-section">
+                <div class="section-header">
+                    <h3>Vehicles</h3>
+                    <button class="add-vehicle-button"><i class="fas fa-plus"></i> Add Vehicle</button>
+                </div>
+
+                <div class="vehicle-list">
+                    <div class="admin-vehicle-card">
+                        <img src="lincoln_mkt.png" alt="Lincoln MKT">
+                        <div class="vehicle-details">
+                            <div class="name">Lincoln MKT</div>
+                            <div class="type">Sedan</div>
+                            <div class="price">$120 Base</div>
+                        </div>
+                    </div>
+
+                    <div class="admin-vehicle-card">
+                        <img src="luxury_sedan.png" alt="Luxury Sedan">
+                        <div class="vehicle-details">
+                            <div class="name">Luxury Sedan</div>
+                            <div class="specs">
+                                <i class="fas fa-users"></i> 2
+                                <i class="fas fa-suitcase-rolling"></i> 2
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admin-vehicle-card">
+                        <img src="suv.png" alt="SUV">
+                        <div class="vehicle-details">
+                            <div class="name">SUV</div>
+                            <div class="type">SUV</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing-section">
+                <h3>Pricing</h3>
+                <div class="pricing-details">
+                    <div class="pricing-item">Base Fee</div>
+                    <div class="pricing-item">Per Mile</div>
+                    <div class="pricing-item">Per Minute</div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>Content</h3>
+                <div class="content-items">
+                    <div class="content-item">
+                        <label for="image-upload">Image</label>
+                        <input type="text" id="image-upload">
+                    </div>
+                    <div class="content-item">
+                        <label for="video-upload">Video</label>
+                        <input type="text" id="video-upload">
+                    </div>
+                    <div class="content-item">
+                        <label for="theme-input">Theme</label>
+                        <input type="text" id="theme-input">
+                    </div>
+                    <div class="content-item">
+                        <label for="reviews-input">Reviews</label>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
