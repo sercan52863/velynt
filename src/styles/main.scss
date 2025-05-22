@@ -1,0 +1,24 @@
+// Değişkenler
+$primary: #2A2A2A;
+$secondary: #D4AF37;
+
+// Responsive Mixin
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Global Stiller
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, $primary, lighten($primary, 10%));
+}
+
+// Mobil İlk Yaklaşım
+@include respond-to(768px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
