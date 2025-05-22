@@ -1,22 +1,37 @@
-body {
+/* Temel Reset */
+* {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: #f5f5f5;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Hero Stilleri */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://example.com/hero-bg.jpg');
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('/assets/images/hero-bg.jpg');
   background-size: cover;
   color: white;
   text-align: center;
   padding: 4rem 0;
 }
 
-.reservation-form {
-  max-width: 800px;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Araç Kartları */
+.vehicle-card {
+  max-width: 300px;
   margin: 2rem auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.vehicle-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
 }
