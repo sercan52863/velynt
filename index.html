@@ -12,25 +12,28 @@
     <p>Premium Araç Kiralama Deneyimi</p>
   </header>
 
-  <section class="reservation-form">
-    <h2>Rezervasyon Yapın</h2>
-    <!-- Rezervasyon formu buraya gelecek -->
+  <!-- Araç Galerisi -->
+  <section class="vehicle-gallery">
+    <div class="vehicle-card">
+      <img src="./assets/lincoln-mkt.jpg" alt="Lincoln MKT">
+      <h3>Lincoln MKT Sedan</h3>
+      <p>$120/saat</p>
+    </div>
+    <!-- Diğer araçlar buraya eklenebilir -->
   </section>
 
+  <!-- Rezervasyon Formu -->
+  <section class="reservation-form">
+    <h2>Rezervasyon Yapın</h2>
+    <form class="reservation-form">
+      <input type="text" placeholder="Alış Lokasyonu" required>
+      <input type="text" placeholder="Bırakma Lokasyonu" required>
+      <input type="datetime-local" required>
+      <button type="submit">Rezervasyon Yap</button>
+    </form>
+  </section>
+
+  <!-- Script dosyası body'nin en sonunda -->
   <script src="./scripts/main.js"></script>
 </body>
 </html>
-<section class="vehicle-gallery">
-  <div class="vehicle-card">
-    <img src="./assets/lincoln-mkt.jpg" alt="Lincoln MKT">
-    <h3>Lincoln MKT Sedan</h3>
-    <p>$120/saat</p>
-  </div>
-  <!-- Diğer araçlar -->
-</section>
-<form class="reservation-form">
-  <input type="text" placeholder="Alış Lokasyonu" required>
-  <input type="text" placeholder="Bırakma Lokasyonu" required>
-  <input type="datetime-local" required>
-  <button type="submit">Rezervasyon Yap</button>
-</form>
