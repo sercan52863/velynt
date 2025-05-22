@@ -1,26 +1,26 @@
-/* Temel Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Hero Stilleri */
+/* Hero Section */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-              url('/assets/images/hero-bg.jpg');
+              url('./assets/images/hero-bg.jpg');
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-/* Araç Kartları */
+/* Vehicle Card */
 .vehicle-card {
   max-width: 300px;
   margin: 2rem auto;
@@ -34,4 +34,18 @@
   height: 200px;
   object-fit: cover;
   border-radius: 4px;
+}
+
+/* Form Stilleri */
+.reservation-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
 }
