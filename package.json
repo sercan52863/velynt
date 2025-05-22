@@ -1,5 +1,5 @@
 {
-  "name": "velynt",
+  "name": "velynt-luxury",
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html",
